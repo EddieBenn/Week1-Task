@@ -1,7 +1,98 @@
-*,
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+background: url("../daniel-k-cheung-cPF2nlWcMY4-unsplash.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+height: 100vh;
+width: 100vw;
+}
+
+.title-img {
+display:flex;
+justify-content: center;
+padding-top: 20px;
+width: 100%;
+}
+
+a > .image {
+  width: 100%
+}
+
+
+.box {
+  background-color: #ffffffe3;
+  background-image: url("../Star_wars-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.dropdown {
+  height: 50px;
+  width: fit-content;
+  margin-top: 210px;
+  margin-left: 110px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+@media only screen and (max-width: 1020px) {
+  .users {
+    margin: 10px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  a > .image {
+width: 70%;
+height: 50%;
+margin: 0 70px;
+}
+
+.box {
+  height: 250px;
+  width: 250px;
+}
+
+.dropdown {
+  height: 30px;
+  width: fit-content;
+  margin-top: 180px;
+  margin-left: 70px;
+
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .box {
+    margin: 5px;
+}
+}
+
+@media only screen and (max-width: 560px) {
+  .users {
+margin: 10px;
+grid-template-columns: auto;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+}
+
+.dropdown {
+  height: 50px;
+  width: fit-content;
+  margin-top: 210px;
+  margin-left: 110px;
+}
 }
